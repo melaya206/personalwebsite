@@ -377,22 +377,39 @@ h3{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 30%;
-	height: 250px;
+	width: 100%;
+	height: 100%;
 	background: var(--color-white);
 	border-radius: 20px;
 	box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
 	overflow: hidden;
 }
-.project-box>i{
-	font-size: 50px;
-	color: var(--second-color);
+.project-box>button{
+	font-size: 15px;
+	background-color: var(--second-color);
+	color: var(--body-color);
 	margin-bottom: 25px;
 }
-.project-box label{
+
+.project-box>button>a{
+	font-size: 15px;
+	background-color: var(--second-color);
+	color: var(--body-color);
+	margin-bottom: 25px;
+}
+.project-box p{
 	font-size: 15px;
 	color: #777;
+	flex-wrap: wrap;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 }
+
+.project-box h3{
+	padding-top: 20px;
+}
+
 .project-box::after, .contact-info::after{
 	content: "";
 	position: absolute;
@@ -407,11 +424,18 @@ h3{
 .contact-info:hover::after{
 	bottom: 0;
 }
-.project-box:hover i,
+
+.project-box:hover button,
 .project-box:hover h3,
-.project-box:hover label{
+.project-box:hover p{
 	color: var(--color-white);
 	z-index: 2;
+}
+
+.project-box:hover button,
+.project-box:hover a{
+	color: var(--second-color);
+	background-color: var(--color-white);
 }
 
 /* ----- CONTACT BOX ----- */

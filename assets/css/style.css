@@ -312,6 +312,10 @@ h3{
 	color: var(--text-color-second);
 	margin-bottom: 15px;
 }
+.section object{
+	align-items: center;
+	margin-bottom: 2em;
+}
 
 /* ----- ABOUT INFO ----- */
 .about-info{

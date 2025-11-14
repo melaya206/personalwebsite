@@ -18,6 +18,12 @@
 
 }
 
+.disclaimer {
+	background-color: #E4572E;
+	text-align: center;
+	color: white;
+}
+
 /* ----- BASE ----- */
 * {
 	margin: 0;

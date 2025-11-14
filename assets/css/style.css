@@ -79,6 +79,31 @@ html {
 	height: 70px;
 }
 
+.back-btn{
+	font-weight: 500;
+	padding: 12px 20px;
+	background: #4C956C;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .4s;
+	margin-bottom: 50px;
+}
+
+.back-btn>a{
+	color:#efefef;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.back-btn>a>i{
+	font-size: 15px;
+}
+
+.back-btn:hover{
+	background:#3a7052;
+}
+
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
 	font-size: 16px;

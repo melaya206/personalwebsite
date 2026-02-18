@@ -10,16 +10,16 @@
 	--text-color-third: #E4572E;
 
 	--first-color: #E4572E;
-	--first-color-hover: #A66E3F;
+	--first-color-hover: #c14721;
 
-	--second-color: #A66E3F;
+	--second-color: #E4572E;
 	--third-color: #4C956C;
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
 
 .disclaimer {
-	background-color: #E4572E;
+	background-color: var(--third-color);
 	text-align: center;
 	color: white;
 }
@@ -79,6 +79,8 @@ html {
 	height: 70px;
 }
 
+
+/* ----- BACK BUTTON ----- */
 .back-btn{
 	font-weight: 500;
 	padding: 12px 20px;
@@ -112,6 +114,7 @@ i{
 /* ------- BASE -------- */
 body{
 	background: var(--body-color);
+	overflow-x: hidden;
 }
 .container{
 	width: 100%;
@@ -366,7 +369,7 @@ h3{
 	font-size: 15px;
 	color: #777;
 }
-.about-btn button{
+/* .about-btn button{
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
@@ -376,7 +379,7 @@ h3{
 }
 .about-btn button:hover{
 	background: var(--first-color-hover);
-}
+} */
 
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
@@ -419,19 +422,11 @@ h3{
 	box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
 	overflow: hidden;
 }
-.project-box>button{
-	font-size: 15px;
-	background-color: var(--second-color);
-	color: var(--body-color);
-	margin-bottom: 25px;
+
+.project-box h3{
+	padding-top: 20px;
 }
 
-.project-box>button>a{
-	font-size: 15px;
-	background-color: var(--second-color);
-	color: var(--body-color);
-	margin-bottom: 25px;
-}
 .project-box p{
 	font-size: 15px;
 	color: #777;
@@ -441,11 +436,30 @@ h3{
 	padding-bottom: 20px;
 }
 
-.project-box h3{
-	padding-top: 20px;
+.project-box>button{
+	font-size: 15px;
+	margin-bottom: 25px;
 }
 
-.project-box::after, .contact-info::after{
+.project-box>button>a{
+	font-size: 15px;
+	text-decoration: none;
+	color: var(--text-color-second);
+	margin-bottom: 25px;
+}
+
+/* .project-box:hover button,
+.project-box:hover h3,
+.project-box:hover p{
+	color: var(--color-white);
+	z-index: 2;
+} */
+
+.project-box:hover button{
+	color: var(--second-color);
+}
+
+/* .project-box::after, .contact-info::after{
 	content: "";
 	position: absolute;
 	bottom: -100%;
@@ -458,20 +472,7 @@ h3{
 .project-box:hover::after,
 .contact-info:hover::after{
 	bottom: 0;
-}
-
-.project-box:hover button,
-.project-box:hover h3,
-.project-box:hover p{
-	color: var(--color-white);
-	z-index: 2;
-}
-
-.project-box:hover button,
-.project-box:hover a{
-	color: var(--second-color);
-	background-color: var(--color-white);
-}
+} */
 
 /* ----- CONTACT BOX ----- */
 .contact-info{
@@ -510,13 +511,13 @@ h3{
     background: var(--color-white);
 }
 
-.contact-info:hover.contact-info h2,
+/* .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i,
 .contact-info:hover.contact-info a{
     color: #777;
     z-index: 2;
-}
+} */
 
 /* ----- CONTACT FORM ----- */
 .form-control{
@@ -557,7 +558,7 @@ textarea {
 	color: var(--color-white);
 }
 .form-button>.btn:hover {
-	background-color: rgb(112, 141, 214);
+	background-color: var(--first-color-hover);
 }
 .form-button i {
 	font-size: 18px;

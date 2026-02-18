@@ -59,7 +59,7 @@ sr.reveal('.featured-image', {delay: 300})
 sr.reveal('.project-box', {interval: 200})
 
 /* -- HEADINGS -- */
-sr.reveal('.top-header', {})
+// sr.reveal('.top-header', {})
 
 /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
 

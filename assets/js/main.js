@@ -32,7 +32,7 @@ function myMenuFunction() {
 
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText", {
-  strings : ["Informatics", "Business","Explorer"],
+  strings : ["Informatics", "Business","Data Science","Project Management", "Strategy", "People"],
   loop  : true,
   typeSpeed : 100,
   backSpeed : 80,
